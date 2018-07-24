@@ -1,0 +1,66 @@
+html, body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  color: #F5F5F5;
+  width: 216px;
+  text-align: center;
+}
+
+header {
+  padding: 2px;
+  margin:0px auto; 
+  background-color: #212121; 
+}
+
+section {
+  background-color: #616161;
+  padding: 4px;
+}
+
+select {
+  margin: 4px;
+}
+
+/*
+Toggle CSS
+*/
+
+.onoffswitch {
+  width: 62px;
+  margin: 0px auto;
+  position: relative; 
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  height: 27px; padding: 0; line-height: 27px;
+  border: 2px solid #9E9E9E; border-radius: 27px;
+  background-color: #9E9E9E;
+}
+.onoffswitch-label:before {
+  content: "";
+  display: block; width: 27px; margin: 0px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 33px;
+  border: 2px solid #FFFFFF; border-radius: 27px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #7CB342;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+ border-color: #7CB342;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px; 
+}
